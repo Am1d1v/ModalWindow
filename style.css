@@ -30,7 +30,9 @@ body {
 }
 
 .hidden {
-  display: block;
+  display: none;
+  position: absolute;
+  z-index: 5;
 }
 .hidden__Modal {
   width: 300px;
@@ -42,7 +44,11 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 30px;
+  background-color: #402785;
 }
 .hidden__Btn {
   margin-left: 69px;
+}
+.hidden__overlay {
+  z-index: 4;
 }/*# sourceMappingURL=style.css.map */
