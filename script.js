@@ -23,19 +23,16 @@ const closeModalWindow = function(){
     modalWindow.style.display = "none";
 }
 
-closeBtnModalWindow.addEventListener("click", closeModalWindow);
+closeBtnModalWindow.addEventListener("click", closeModalWindow); // Close Modal Window by clicking "Submit" buttom
 
-overlay.addEventListener("click", closeModalWindow);
+overlay.addEventListener("click", closeModalWindow); //  Close Modal Window by clicking on overlay
 
+document.addEventListener("keydown", (event) => {
+    //console.log(event.key);
 
-/*
-
-closeBtnModalWindow.addEventListener("click",() => { // Close Modal Window
-    modalWindow.style.display = "none";
-});
-
-overlay.addEventListener("click",() => { // Close Modal Window by clicking on overlay
-    modalWindow.style.display = "none";
+    if (event.key === "Escape"){
+        closeModalWindow();
+    }
 })
 
-*/
+
